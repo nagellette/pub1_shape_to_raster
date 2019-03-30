@@ -1,14 +1,14 @@
 from osgeo import gdal, ogr
 
 # Define pixel_size and NoData value of new raster
-pixel_size = 0.5
+pixel_size = 1.0
 NoData_value = -9999
 
 # Filename of input OGR file
 vector_fn = './data/bejing_reduced_projected_reduced.shp'
 
 # Filename of the raster Tiff that will be created
-raster_fn = 'test.tif'
+raster_fn = './data/bejing_reduced_projected_labels.tif'
 
 # Open the data source and read in the extent
 source_ds = ogr.Open(vector_fn)
