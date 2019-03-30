@@ -1,5 +1,9 @@
 from osgeo import gdal, ogr
 
+'''
+Rasterize code reference: https://pcjericks.github.io/py-gdalogr-cookbook/raster_layers.html#get-raster-metadata
+'''
+
 # Define pixel_size and NoData value of new raster
 pixel_size = 1.0
 NoData_value = -9999
